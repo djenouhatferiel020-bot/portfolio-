@@ -1,0 +1,622 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  color: #2b6cb0;
+}
+/* === Navigation Bar Styling === */
+nav ul {
+  list-style: none;        /* Removes bullet points */
+  display: flex;           /* Align items horizontally */
+  justify-content: center; /* Center the menu */
+  padding: 0;
+  margin: 0;
+  background-color: #333;  /* Dark background for navbar */
+}
+
+nav ul li {
+  margin: 0 15px;          /* Space between links */
+}
+
+nav ul li a {
+  color: white;            /* Text color */
+  text-decoration: none;   /* Remove underline */
+  font-weight: bold;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  color: #00bfff;          /* Light blue when hovered */
+}
+/* Fix navbar position (Step 2) */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
+  background-color: #333;
+  position: fixed;     /* Keeps navbar on top when scrolling */
+  top: 0;              /* Sticks to top of page */
+  width: 100%;         /* Full width */
+  z-index: 1000;       /* Stays above all other content */
+}
+
+/* Push page content down below navbar */
+body {
+  margin-top: 60px;
+}
+/* Navbar link styles */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  color: #ffcc00;
+  transition: 0.3s;
+}
+/* Section general styling */
+section {
+  padding: 100px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 100px auto; /* centers content */
+}
+
+/* Headings style */
+h1, h2 {
+  color: #003366;
+}
+
+/* Paragraphs */
+p {
+  color: #333;
+  line-height: 1.6;
+}
+/* --- General Page Styling --- */
+body {
+  background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar spacing fix */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #003366;
+  padding: 15px 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+<footer>
+  <p>© 2025 Mon Portfolio | Créé par Feriel 🌸</p>
+</footer>
+/* --- Footer Styling --- */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+/* --- Navbar Hover Effect --- */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #0055aa;
+  border-radius: 5px;
+}
+/* --- Profile Picture --- */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  border: 3px solid #003366;
+}/* --- Work Section Images --- */
+.projects img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.projects img:hover {
+  transform: scale(1.05);
+}
+/* --- Resume Section --- */
+#resume {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+}
+
+#resume h2 {
+  text-align: center;
+  color: #333;
+}
+
+#resume ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+#resume li {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+}
+/* --- Contact Section --- */
+#contact {
+  padding: 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#contact form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;s
+}
+
+#contact button:hover {
+  background-color: #555;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
+/* --- Footer --- */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* --- Smooth Look & Scroll --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Spacing between sections --- */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* --- Fade-in animation for content --- */
+section, .projects img {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* --- Footer Style --- */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+/* --- Footer Section --- */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+/* --- Contact Section --- */
+#contact {
+  background-color: #f0f0f0;
+  padding: 40px;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contact label {
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#contact button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #555;
+}
+/* --- Contact Section --- */
+#contact {
+  background-color: #fafafa;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+/* --- Footer --- */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+}
+/* --- About Section --- */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+#about img.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #555;
+}
+
+#about p {
+  max-width: 500px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+/* --- Projects Section --- */
+#work {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+}
+
+#work h2 {
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.projects img {
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projects img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+/* --- Video Section --- */
+#work video {
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+/* --- Contact Section --- */
+#contact {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #555;
+}
+/* --- Footer --- */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+footer {
+    background-color: #222; /* dark background */
+    color: white;           /* white text */
+    text-align: center;     /* center the text */
+    padding: 15px 0;        /* space above and below text */
+    font-size: 14px;        /* slightly smaller font */
+}
+
+footer p {
+    margin: 0; /* remove default paragraph spacing */
+}
+/* Footer link styles */
+footer a {
+    color: #ffcc00; /* golden-yellow links */
+    text-decoration: none; /* remove underline */
+    transition: color 0.3s ease; /* smooth color change */
+}
+
+footer a:hover {
+    color: #ffffff; /* turns white on hover */
+    text-decoration: underline; /* underline when hovered */
+}
+/* ===== Contact Section Styles ===== */
+#contact {
+    background-color: #111; /* dark background */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffcc00; /* golden accent */
+}
+
+/* Style the form */
+form {
+    max-width: 400px;
+    margin: 0 auto; /* center the form */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* space between elements */
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #ccc;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+/* Button style */
+button {
+    background-color: #ffcc00;
+    color: #111;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #111;
+}
+/* Center and style the contact section */
+#contact {
+    max-width: 500px; /* keeps it narrow and readable */
+    margin: 50px auto; /* centers horizontally */
+    padding: 20px;
+    background-color: #111; /* dark box behind the form */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#contact h2 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
