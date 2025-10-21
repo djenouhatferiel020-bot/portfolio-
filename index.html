@@ -1,10 +1,10 @@
-S<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -19,56 +19,56 @@ S<!DOCTYPE html>
     </nav>
   </header>
 
-  <section id="home">
+  <section id="home" class="section">
     <h1>Bienvenue sur mon portfolio</h1>
- 
-</section>
-<!-- ⬇ Paste the Step 2 sections here ⬇ -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>Je m'appelle Feriel, étudiante passionnée par le web et la technologie.</p>
-  <img src="images/me.jpg" alt="Photo de moi" class="profile-pic">
-</section>
+  </section>
 
-<section id="work">
-  <h2>My Work</h2>
-  <p>Voici quelques projets que j’ai réalisés.</p>
-  <div class="projects">
-  <img src="images/project1.jpg" alt="Mon Projet 1">
-  <img src="images/project2.jpg" alt="Mon Projet 2">
-</div>
-<video width="320" height="240" controls>
-  <source src="video.mp4" type="video/mp4">
-  Votre navigateur ne supporte pas la vidéo.
-</video>
-</section>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Je m'appelle Feriel, étudiante passionnée par le web et la technologie.</p>
+    <img src="images/me.jpg" alt="Photo de moi" class="profile-pic">
+  </section>
 
-<section id="resume">
-  <h2>Resume</h2>
-  <ul>
-    <li>Formation : GoMyCode</li>
-    <li>Compétences : HTML, CSS, Git</li>
-  </ul>
-</section>
-<section id="contact">
+  <section id="work" class="section">
+    <h2>My Work</h2>
+    <p>Voici quelques projets que j’ai réalisés.</p>
+    <div class="projects">
+      <img src="images/project1.jpg" alt="Mon Projet 1">
+      <img src="images/project2.jpg" alt="Mon Projet 2">
+    </div>
+    <video width="320" height="240" controls>
+      <source src="video.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+  </section>
+
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <ul>
+      <li>Formation : GoMyCode</li>
+      <li>Compétences : HTML, CSS, Git</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
     <h2>Contact</h2>
-    <form>
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name" required>
+    <form id="contact-form">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
 
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
 
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" required></textarea>
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Envoyer</button>
+      <button type="submit">Envoyer</button>
     </form>
-</section>
+  </section>
 
-<footer>
+  <footer>
     <p>© 2025 Fériel | Mon Portfolio</p>
-    <p>© 2025 Fériel – Tous droits réservés.</p>
-</footer>
+  </footer>
+
 </body>
 </html>

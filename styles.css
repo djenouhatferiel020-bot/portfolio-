@@ -1,0 +1,239 @@
+/* ===== Body & General Styles ===== */
+body {
+  font-family: 'Roboto', sans-serif; /* Roboto pour le projet */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+  color: #333;
+  text-align: center;
+  margin-top: 60px; /* espace pour navbar fixe */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Navbar ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  margin: 0;
+  background-color: #003366;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #0055aa;
+  border-radius: 5px;
+  color: #ffcc00;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 100px auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* About Section */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  padding: 40px;
+}
+
+#about img.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #555;
+}
+
+#about p {
+  max-width: 500px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Projects Section */
+#work {
+  text-align: center;
+  padding: 50px;
+}
+
+#work h2 {
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projects img {
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projects img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Contact Section ===== */
+#contact {
+  background-color: #111;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+#contact h2 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact label {
+  text-align: left;
+  font-weight: bold;
+  color: #ccc;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #ffcc00;
+  outline: none;
+}
+
+#contact button {
+  background-color: #ffcc00;
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact button:hover {
+  background-color: white;
+  color: #111;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ===== Animations ===== */
+section, .projects img {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
